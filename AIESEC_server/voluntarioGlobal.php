@@ -191,10 +191,8 @@ En menos de 24hs serás contactado via mail y llamada para asistir a una charla 
                                 <option value="13">Recibí un correo de mi universidad</option>
                                 <option value="12">Lo escuché en un stand informativo en mi universidad</option>
                                 <option value="30">Lo ví en una red social / pagina web de mi universidad</option>
-                                <!-- esos van a ser cambiados para los respectivos!
-                                <option value="5">Lo escuché en un stand informativo en mi universidad 2</option>
-                                <option value="3">Me contó un amigo 2</option>
-                                -->
+                                <option value="5">Me enteré por un evento o feria</option>
+                                <!-- <option value="3">Me contó un amigo 2</option> -->
                                 <option value="16">Me enteré a traves de una organización aliada</option>
                                 <!-- todo se pasa a el 16
                                 <option value="23">Me enteré a traves de una organización aliada 2</option>
