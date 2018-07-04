@@ -178,25 +178,35 @@ En menos de 24hs serás contactado via mail y llamada para asistir a una charla 
                         <label class="webforms__label" for="field_como-te-enteraste-de-esta-oportunidad">¿Cómo te enteraste de esta oportunidad? *</label>
                         <div class="webforms__field category-field">
                             <select name="fields[como-te-enteraste-de-esta-oportunidad]" id="field_como-te-enteraste-de-esta-oportunidad" class="form-control" required="required">
-                                <option value="14">Un amigo/conocido</option>
-                                <option value="12">Un stand informativo (Universidad)</option>
-                                <option value="26">Presentación en un salón (Universidad)</option>
-                                <option value="6">Facebook</option>
-                                <option value="18">Instagram</option>
-                                <option value="19">Twitter</option>
-                                <option value="27">Otra red social</option>
-                                <option value="2">Buscador en internet (Google)</option>
-                                <option value="28">Medios / Influencers</option>
-                                <option value="5">Un evento</option>
-                                <option value="13">Correos electrónicos (universidad)</option>
-                                <option value="3">Conozco un intercambista de AIESEC / Formo parte de AIESEC</option>
-                                <option value="16">¡Soy parte de AAreII!</option>
-                                <option value="23">¡Soy parte de AArEIQ!</option>
-                                <option value="24">¡Soy parte de JCI!</option>
-                                <option value="25">¡Soy parte de Rotaract!</option>
-                                <option value="22">Evento de Spanglish</option>
-                                
+                                <option value="29">Selecciona una opción</option>
+                                <option value="14">Me contó un amigo</option>
+                                <option value="6" >Un amigo lo compartió en Facebook</option>
+                                <option value="18">Un amigo lo compartió en InstaStories</option>
+                                <option value="27">Un amigo lo compartió en otra red social</option>
+                                <option value="2">Lo encontré en Google</option>
+                                <option value="35">Vi una publicación en un grupo de Facebook</option>
+                                <option value="36">Vi una publicidad en Facebook</option>
+                                <option value="37">Vi una publicidad en Instagram</option>
+                                <option value="26">Lo escuché en una presentación en mi universidad</option>
+                                <option value="13">Recibí un correo de mi universidad</option>
+                                <option value="12">Lo escuché en un stand informativo en mi universidad</option>
+                                <option value="30">Lo ví en una red social / pagina web de mi universidad</option>
+                                <!-- esos van a ser cambiados para los respectivos!
+                                <option value="5">Lo escuché en un stand informativo en mi universidad 2</option>
+                                <option value="3">Me contó un amigo 2</option>
+                                -->
+                                <option value="16">Me enteré a traves de una organización aliada</option>
+                                <!-- todo se pasa a el 16
+                                <option value="23">Me enteré a traves de una organización aliada 2</option>
+                                <option value="24">Me enteré a traves de una organización aliada 3</option>
+                                <option value="25">Me enteré a traves de una organización aliada 4</option>
+                                -->
+                                <option value="22">Fuí a un evento de Spanglish</option>
+                                <option value="31">Ví un anuncio de Potenciate</option>
+                                <!-- desactivado tbn
                                 <option value="8">Otro</option>
+                                -->
+                                <option value="28">Medios / Influencers</option>
                             </select>
                         </div>
                     </div>
