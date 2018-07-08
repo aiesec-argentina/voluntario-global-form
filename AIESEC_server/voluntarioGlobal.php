@@ -112,10 +112,9 @@ En menos de 24hs serás contactado via mail y llamada para asistir a una charla 
                         <label class="webforms__label" for="field_fecha-de-nacimiento">Fecha de Nacimiento: *</label>
                         <div class="webforms__field date-field">
                             <div class="form-inline">
-                                <p>(Use <strong>YYYY-MM-DD</strong> para la fecha)</p>
                                     <div class="input-group">
                                         <div class="input-group-addon">Fecha</div>
-                                              <input type="text" name="fields[fecha-de-nacimiento][start_date]" id="fields_fecha-de-nacimiento_start_date" value="" class="form-control webforms__input_date" placeholder="YYYY-MM-DD" required="required" />
+                                              <input type="date" name="fields[fecha-de-nacimiento][start_date]" id="fields_fecha-de-nacimiento_start_date" value="2000-01-01" class="form-control webforms__input_date" placeholder="YYYY-MM-DD" required="required" />
                                     </div>
                             </div>  
                         </div>
