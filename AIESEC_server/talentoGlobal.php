@@ -325,19 +325,28 @@
                 <label class="webforms__label" for="field_como-te-enteraste-de-esta-oportunidad">¿Cómo te enteraste de esta oportunidad?  *</label>
                 <div class="webforms__field category-field">
                     <select name="fields[como-te-enteraste-de-esta-oportunidad]" id="field_como-te-enteraste-de-esta-oportunidad" class="form-control" required="required">
+                          <select name="fields[como-te-enteraste-de-esta-oportunidad]" id="field_como-te-enteraste-de-esta-oportunidad" class="form-control" required="required">
                           <option value="" disabled selected>Por favor, elige una opcion</option>
-                          <option value="7">Conozco una persona que trabaja/ó en AIESEC</option>
-                          <option value="6">Conozco una persona que viajó con AIESEC</option>
-                          <option value="2">E-mail o intervención en la Universidad</option>
-                          <option value="9">Portal de Empleo de la Universidad</option>
-                          <option value="26">Redes sociales</option>
-                          <option value="28">Google</option>
-                          <option value="29">Publicidad Online</option>
-                          <option value="30">Soy parte de AArEII (o referido de ellos)</option>
-                          <option value="31">Soy parte de AArEIQ (o referido de ellos)</option>
-                          <option value="32">Soy parte de Rotaract (o referido de ellos)</option>
-                          <option value="33">Soy parte de JCI (o referido de ellos)</option>
-                          <option value="34">Soy Scout (o referido de ellos)</option>
+                          <option value="7">Me contó un amigo</option>
+                          <option value="26">Un amigo lo compartió en Facebook</option>
+                          <option value="36">Lo encontré en un portal de empleo online</option>
+                          <option value="37">Lo encontré en Linkedin</option>
+                          <option value="28">Lo encontré en Google</option>
+                          <option value="9">Lo encontré en un portal de empleo de la universidad</option>
+                          <option value="29">Vi una publicidad en Facebook</option>
+                          <option value="38">Ví una publicidad en Instagram</option>
+                          <option value="9">Lo encontré en un portal de empleo de la universidad</option>
+                          <option value="2">Recibí un correo electrónico de mi universidad</option>
+                          <option value="30">Me enteré a traves de una organización aliada</option>
+                          <option value="39">Me enteré en un evento o feria</option>
+                          <option value="40">Medios / influencers</option>
+                          <option value="41">Otro</option>
+                          <!-- <option value="31">Me enteré a traves de una organización aliada 2</option> 
+                          <option value="32">Me enteré a traves de una organización aliada 3 </option>
+                          <option value="33">Me enteré a traves de una organización aliada 4</option>
+                          <option value="34">Me enteré a traves de una organización aliada 5</option>
+                          <option value="6">Me contó un amigo 2</option> -->
+                    </select>
                     </select>
                 </div>
             </div>
