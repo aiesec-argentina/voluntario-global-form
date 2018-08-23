@@ -6,6 +6,7 @@
             <meta name="description" content="Voluntario Global" charset="UTF-8">
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" media="all" href="<?php echo $dir;?>css/webform.css" class="section-webforms" />
+            <link rel="stylesheet" media="all" href="http://localhost/AIESEC_server/css/customWebformResponsive.css"/>
             <link rel="stylesheet" media="all" href="https://d2cmuesa4snpwn.cloudfront.net/webforms/stylesheets/_ec049774/flatly.css" class="section-flatly" />
             <meta name="csrf-param" content="authenticity_token" />
             <meta name="csrf-token" content="ipaLfbipM7hrrPaNz8xqO0IpPADjtg/LHTRUi29ACBA1SxnS3fuSRhPb+3kYENI1fobtBVOZqAGfPpk0FdegMA==" />
@@ -39,7 +40,7 @@
                 <h1 class="webforms__heading">Voluntario Global</h1>
                 <div class="webforms__description">
                     <p>Completá tus datos debajo para generar tu perfil gratuito en nuestra plataforma global y descubrir los proyectos disponibles.
-En menos de 24hs serás contactado via mail y llamada para asistir a una charla informativa en nuestra oficina más cercana.</p>
+En menos de 24hs serás contactado de una de nuestras oficinas más cercanas.</p>
                 </div>
                 <div id="webforms__fields-container"> <!-- Contenedor del form -->
                     <div class="form-group hidden"> <!-- Nombre completo -->
@@ -118,10 +119,9 @@ En menos de 24hs serás contactado via mail y llamada para asistir a una charla 
                         <label class="webforms__label" for="field_fecha-de-nacimiento">Fecha de Nacimiento: *</label>
                         <div class="webforms__field date-field">
                             <div class="form-inline">
-                                <p>(Use <strong>YYYY-MM-DD</strong> para la fecha)</p>
                                     <div class="input-group">
                                         <div class="input-group-addon">Fecha</div>
-                                              <input type="text" name="fields[fecha-de-nacimiento][start_date]" id="fields_fecha-de-nacimiento_start_date" value="" class="form-control webforms__input_date" placeholder="YYYY-MM-DD" required="required" />
+                                              <input type="date" name="fields[fecha-de-nacimiento][start_date]" id="fields_fecha-de-nacimiento_start_date" value="2000-01-01" class="form-control webforms__input_date" placeholder="YYYY-MM-DD" required="required" />
                                     </div>
                             </div>  
                         </div>
@@ -443,6 +443,49 @@ En menos de 24hs serás contactado via mail y llamada para asistir a una charla 
                     }
                 };
         });
+    </script>
+    <script type="text/javascript">
+                $(document).ready(function(){
+
+                $("#webform").submit(function(evt) {
+					
+                    if($('#webform')[0].checkValidity() || $('#webform')[0].checkValidity){
+						$('#podio_form')[0].scrollIntoView();
+                        window.document.getElementById("field_nombre-completo").value = window.document.getElementById("field_titulo").value + " " + window.document.getElementById("field_apellido").value;						
+						var podioFormToken = $('#podioFormToken').attr('value');
+						
+						$.ajax({
+							type: 'POST',
+							data: { podioFormToken: podioFormToken },
+							url: "<?php echo $dir ?>classes/tokenCheck.php",
+							//async: false,
+							success: function(data) {		
+								if(data == 0){									
+									evt.preventDefault();
+								}
+								else{										
+									$('#webforms__fields-container').css('display', 'none');
+									$('#btnEnviar').css('display', 'none');
+									$('#carga').css('display', 'block');
+								}
+							},
+							failure: function(){
+								console.log("failure");
+							},
+							error: function(){
+								console.log("error");
+							}
+						});
+						
+                    }
+                    else{
+						evt.preventDefault();
+                        $("#btnEnviar")[0].disabled = false;
+                    }
+                });
+
+            });
+
     </script>
     </body>
 </html>
